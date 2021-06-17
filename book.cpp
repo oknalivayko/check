@@ -253,11 +253,11 @@ string Generate()
       cout << "Invalid Complexity Entered. Please Re-Enter" << endl;
   } while (level < 1 || level > 3);
 
-  if (level == 1)
+  if (level == 1) {
     length = 8;
-  else if (level == 2)
+  } else if (level == 2) {
     length = 14;
-  else
+  } else
     length = 20;
 
   string pass(length, 'a');
@@ -377,6 +377,7 @@ int main() {
       if (c > -1) {
         print(c);
       }
+      system("pause");
       break;
     }
 
@@ -393,6 +394,7 @@ int main() {
       if (c > -1) {
         delSite(c);
       }
+      system("pause");
       break;
     }
 
@@ -423,12 +425,17 @@ int main() {
       }
       fout.close();
       out.close();
+      cout << "List successfully saved";
+      system("pause");
       break;
     }
 
     case '8': {
       ifstream in;
       in.open("sitename.txt");
+      if (!in.is_open()) {
+        cerr << "error\n";
+      }
       for (int i = 0; i < 50; i++) {
         getline(in, sitename[i]);
         getline(in, number[i]);
