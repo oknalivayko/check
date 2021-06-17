@@ -1,3 +1,0 @@
-C:/Users/Олег/source/repos/check/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/Олег/source/repos/check/out/build/x64-Debug/CMakeFiles/cmake.dir
-C:/Users/Олег/source/repos/check/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
